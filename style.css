@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: "DM Sans", sans-serif;
+}
+
+#global {
+  background: #171717;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas:
+    ". header ."
+    ". intro."
+    ". about ."
+    ". projects ."
+    ". services ."
+    ". skils .";
+}
+.header {
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+.header h1 {
+  color: #fff;
+  cursor: pointer;
+}
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+.header-menu li {
+  color: #828282;
+  transition: 0.3s ease all;
+  cursor: pointer;
+  padding: 10px;
+}
+.header-menu li:hover {
+  color: #fff;
+}
+.intro {
+  grid-area: intro;
+  display: flex;
+  justify-content: space-between;
+  padding: 80px 0 20px 0;
+}
+.intro-apresentation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.intro-apresentation h1 {
+  color: #fff;
+  font-size: 3em;
+  width: 350px;
+}
+.intro-apresentation p {
+  color: #828282;
+  font-size: 1.3em;
+}
+.intro-buttons {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.intro-buttons .download {
+  color: #171717;
+  padding: 10px 20px;
+  background: #00df5e;
+  transition: 0.3s ease all;
+}
+.intro-buttons .download:hover {
+  background: #1df577;
+}
+.intro-buttons .contact {
+  padding: 10px 20px;
+  border: 2px solid #333;
+  color: #fff;
+  transition: 0.3s ease all;
+}
+.intro-buttons .contact:hover {
+  border-color: #00df5e;
+  color: #00df5e;
+}
+.intro .illustration {
+  width: 100%;
+  max-width: 400px;
+}
