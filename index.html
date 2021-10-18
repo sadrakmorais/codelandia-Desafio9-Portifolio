@@ -10,29 +10,35 @@
 <body>
   <section id="global">
 
-  <section id="header">
+  <section id="header" class="js-menu">
     <h1>Portifólio</h1>
     <ul class="header-menu">
-      <li>Sobre mim</li>
-      <li>Projetos</li>
-      <li>Serviços</li>
-      <li>Skills</li>
+      <li><a href="#about">Sobre mim</a></li>
+      <li><a href="#projects">Projetos</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#skills">Skills</a></li>
     </ul>
   </section>
 
-  <section id="intro">
+  <section id="intro" class="js-scroll">
     <div class="intro-apresentation">
+      <div id="typed_h1">
         <h1>Olá, eu sou o Sadrak Morais</h1>
+      </div>
+      <h1 id="typedh1"></h1>
         <p>Desenvolvedor Front-End JR</p>
        <div class="intro-buttons">
          <a href="#" class="download">Download CV</a>
          <a href="#" class="contact">Entre em contato</a>
        </div>
     </div>
+    <div class="intro-img">
     <img class="illustration" src="./img/undraw_Lost_online_re_upmy 1.svg" alt="IlustraçãoDev">
+
+    </div>
   </section>
 
-  <section id="about">
+  <section id="about" class="js-scroll">
     <div class="about-content">
      <h1>Sobre mim</h1>
      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the 
@@ -93,7 +99,7 @@
     </ul>
   </section>
 
-  <section id="projects">
+  <section id="projects" class="js-scroll">
     <h1 class="projects-title">Projetos</h1>
     <ul class="projects-container">
       <li class="project">
@@ -142,13 +148,58 @@
     </ul>
   </section>
 
-  <section id="services">
-    <h1>Services</h1>
+  <section id="services" class="js-scroll">
+    <h1>Serviços</h1>
+    <ul class="services-container">
+      <li class="service">
+       <img src="./img/icons/code.svg" alt="IconeCode">
+       <p>Criação de sites</p>
+      </li>
+      <li class="service">
+        <img src="./img/icons/smartphone.svg" alt="IconeSmarthPhone">
+        <p>Sites responsivos</p>
+       </li>
+       <li class="service">
+        <img src="./img/icons/figma.svg" alt="IconeUI/UX Design">
+        <p>UI/UX Designer</p>
+       </li>
+    </ul>
   </section>
 
-  <section id="skills">
-    <h1>Skills</h1>
+  <section id="skills" class="js-scroll">
+    <h1>Minhas Skills</h1>
+    <ul class="skills-container">
+      <li class="skill">
+        <img src="./img/icons/JS.svg" alt="">
+        <p>JavaScript</p>
+      </li>
+
+      <li class="skill">
+        <img src="./img/icons/HTML5.svg" alt="">
+        <p>HTML5</p>
+      </li>
+
+      <li class="skill">
+        <img src="./img/icons/react.svg" alt="">
+        <p>ReactJS</p>
+      </li>
+
+      <li class="skill">
+        <img src="./img/icons/Css.svg" alt="">
+        <p>CSS3</p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section class="footer">
+    <h1> Criado por <a href="linkedin.com/in/sadrak-morais-5269601b6/" target="_blank">Sadrak Morais</a></h1>
+    <p>A partir do <a href="https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codelândia?node-id=13190%3A3" target="_blank">desafio 9</a> do <a href="https://www.instagram.com/iuricode/?hl=pt-br" target="_blank">Iuri Code</a></p>
   </section>
 </section>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script src="./script.js"></script>
 </body>
 </html>
