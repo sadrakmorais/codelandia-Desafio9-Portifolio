@@ -54,7 +54,7 @@
   grid-area: intro;
   display: flex;
   justify-content: space-between;
-  padding: 150px 0 150px 0;
+  padding: 100px 0 150px 0;
   flex-wrap: wrap;
 }
 .intro-apresentation {
@@ -98,8 +98,8 @@
 }
 .intro-img {
   width: 100%;
-  max-width: 500px;
-  min-width: 400px;
+  max-width: 450px;
+  min-width: 100px;
 }
 .intro-img .illustration {
   width: 100%;
@@ -282,10 +282,10 @@
   transform: translate3d(0, 0, 0);
 }
 
-/*RESPONSIVIDADE TABLET*/
-@media (max-width: 1030px) {
+/*RESPONSIVIDADE Notebook*/
+@media (max-width: 1420px) {
   #global {
-    grid-template-columns: 100px 1fr 100px;
+    grid-template-columns: 1fr 5fr 1fr;
     gap: 60px 0;
   }
 
@@ -307,7 +307,7 @@
   }
 
   .intro-img {
-    margin: 150px 0 0 220px;
+    margin: 150px auto 0 auto;
     width: 100%;
     max-width: 400px;
     min-width: 200px;
@@ -315,18 +315,54 @@
   .intro-img .illustration {
     width: 100%;
   }
+  .projects-container {
+    align-items: center;
+    gap: 0;
+  }
 
   .services-container {
     gap: 20px;
     justify-content: center;
   }
 }
+/*Responsividade Tablet*/
+@media (max-width: 850px) {
+  .header-menu {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 0;
+  }
+  .about-icons {
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .about-icons-icon a,
+  .about-icons-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-icons-icon p {
+    text-align: center;
+    width: 200px;
+  }
+  .projects-container {
+    justify-content: center;
+  }
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
 
 /*RESPONSIVIDADE SMARTPHONE*/
 
-@media (max-width: 480px) {
+@media (max-width: 720px) {
   #global {
-    grid-template-columns: 50px 1fr 50px;
+    grid-template-columns: 1fr 3fr 1fr;
     gap: 10px 0;
   }
   #header {
@@ -364,7 +400,7 @@
     max-width: 300px;
   }
   .intro-img {
-    margin: 120px 0 0 60px;
+    margin: 120px auto 0 auto;
     width: 100%;
     max-width: 220px;
     min-width: 200px;
@@ -397,12 +433,12 @@
 
   .about-icons {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding-top: 60px;
     gap: 20px;
   }
   .projects-container {
-    gap: 60px;
+    gap: 20px;
   }
 
   .services-container {
